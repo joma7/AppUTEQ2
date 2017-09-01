@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">UTEQ</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="footer">© 2017 Universidad Técnica Estatal de Quevedo \nderechos reservados</string>
+
+
+    <!-- Strings de diálogo personalizado -->
+
+    <string name="info_text">Roles de pago - Inicio de sesión</string>
+    <string name="nombre_input">Usuario</string>
+    <string name="contrasena_input">Constraseña</string>
+    <string name="entrar_boton">INGRESAR</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+</resources>

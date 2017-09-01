@@ -1,0 +1,75 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.uteq.uteq.uteqdemo.fragments.DetalleRolPagoFragment">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutTabla"
+        android:gravity="center">
+
+        <ScrollView
+            android:id="@+id/scrollvertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:layout_weight="1">
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollhorizontal"
+                android:scrollbars="horizontal">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txtTransparencia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/borde"
+                        android:textColor="@color/colorPrimary"
+                        android:textAlignment="center"
+                        android:layout_margin="12dp"
+                        android:textSize="24sp" />
+
+                    <TableLayout
+                        android:id="@+id/tablaRol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TableLayout>
+
+                    <TableLayout
+                        android:id="@+id/tablaRol2"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TableLayout>
+
+                    <TextView
+                        android:id="@+id/txtLiquidoPagar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ff6600"
+                        android:textAlignment="center"
+                        android:layout_marginTop="20dp"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/txtNombreUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#36312d"
+                        android:textAlignment="center"
+                        android:layout_margin="12dp"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

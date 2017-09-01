@@ -1,0 +1,53 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeLayoutN"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+
+                <ImageView
+                    android:id="@+id/imgLogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/logouteqminres"
+                    android:scaleType="fitXY"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/borde"
+                    android:text="Noticias - Lo último agregado"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvNoticia"
+                    android:layout_width="match_parent"
+                    android:minHeight="200dp"
+                    android:layout_height="wrap_content"/>
+
+                <include layout="@layout/layout_footer"/>
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</FrameLayout>

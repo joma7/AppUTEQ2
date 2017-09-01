@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Array con los valores de la cabecera de la tabla-->
+    <string-array name="cabecera_ingresos">
+        <item>INGRESO</item>
+        <item>MONTO</item>
+    </string-array>
+
+    <string-array name="cabecera_descuentos">
+        <item>DESCUENTO</item>
+        <item>MONTO</item>
+    </string-array>
+</resources>
