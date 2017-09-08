@@ -3,20 +3,21 @@ apply plugin: 'com.android.application'
 android {
     signingConfigs {
         config {
-            keyAlias 'uteqkey'
-            keyPassword 'uteq.key'
+            keyAlias 'MyAndoirdKey'
+            keyPassword 'lncdj2.A2'
             storeFile file('C:/Users/JOMA/Desktop/ArchivosSubidaAPKUTEQ/keystores/android.jks')
-            storePassword 'uteq.key'
+            storePassword 'lncdj2.A'
         }
     }
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
     defaultConfig {
-        applicationId "com.uteq.uteq.uteqdemo"
+        applicationId "com.uteq.uteqdevelopers.noticiasuteq"
         minSdkVersion 21
         targetSdkVersion 23
-        versionCode 1
-        versionName "1.0"
+        versionName '1.1'
+        signingConfig signingConfigs.config
+        versionCode 2
     }
     buildTypes {
         release {
@@ -24,6 +25,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.config
         }
+        debug {
+            debuggable true
+            signingConfig signingConfigs.config
+        }
+    }
+    productFlavors {
     }
 }
 
